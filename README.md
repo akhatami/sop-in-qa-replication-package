@@ -1,4 +1,4 @@
-     # "State-Of-The-Practice in Quality Assurance in Open Source Software Development" Replication Package
+# "State-Of-The-Practice in Quality Assurance in Open Source Software Development" Replication Package
 
 This is a description of the replication package associated with *State-Of-The-Practice in Quality Assurance in Open Source Software Development* paper.
 
