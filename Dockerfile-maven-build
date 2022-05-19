@@ -1,0 +1,28 @@
+FROM ubuntu:21.04
+
+RUN apt-get update && \
+    apt-get install -y curl && \
+    apt-get install -y unzip && \
+    apt-get install -y zip && \
+    apt-get install -y openjdk-11-jdk && \
+    apt-get install -y python3.9 && \
+    apt-get install -y tar && \
+    apt-get install -y git && \
+    apt-get install -y pip
+
+ENV JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-arm64
+#ENV JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
+
+RUN curl https://archive.apache.org/dist/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz \
+    | tar -xzC /opt && \
+    ln -s /opt/apache-maven-*/bin/mvn /usr/bin/
+
+WORKDIR /root/gh-quality-analytics
+
+COPY requirements.txt ./
+
+RUN python3 -m pip install -r requirements.txt
+
+COPY ./auto_build_maven.py /root/gh-quality-analytics
+
+ENTRYPOINT python3 auto_build_maven.py

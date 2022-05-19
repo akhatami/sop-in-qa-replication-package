@@ -1,0 +1,33 @@
+FROM ubuntu:21.04
+
+RUN apt-get update && \
+    apt-get install -y curl && \
+    apt-get install -y unzip && \
+    apt-get install -y zip && \
+    apt-get install -y openjdk-11-jdk && \
+    apt-get install -y python3.9 && \
+    apt-get install -y tar && \
+    apt-get install -y git && \
+    apt-get install -y pip
+
+ENV JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-arm64
+#ENV JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
+
+RUN curl https://archive.apache.org/dist/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz \
+    | tar -xzC /opt && \
+    ln -s /opt/apache-maven-*/bin/mvn /usr/bin/
+
+WORKDIR /root/gh-quality-analytics
+
+COPY requirements.txt ./
+
+RUN python3 -m pip install -r requirements.txt
+
+COPY ./maven_build_logs /root/gh-quality-analytics/maven_build_logs
+COPY ./auto_jacoco_maven.py /root/gh-quality-analytics
+COPY ./auto_jacoco_maven.sh /root/gh-quality-analytics
+COPY ./generate_build_data_from_maven_logs.py /root/gh-quality-analytics
+
+RUN ["chmod", "+x", "/root/gh-quality-analytics/auto_jacoco_maven.sh"]
+
+ENTRYPOINT ./auto_jacoco_maven.sh

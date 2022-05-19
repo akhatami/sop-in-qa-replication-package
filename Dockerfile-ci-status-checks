@@ -1,0 +1,17 @@
+FROM ubuntu:21.04
+
+RUN apt-get update && \
+    apt-get install -y python3.9 && \
+    apt-get install -y pip
+
+
+WORKDIR /root/gh-quality-analytics
+
+COPY requirements.txt ./
+
+RUN python3 -m pip install -r requirements.txt
+
+COPY ./graphql_crawler.py /root/gh-quality-analytics
+COPY ./github_quality_analytics /root/gh-quality-analytics/github_quality_analytics
+
+ENTRYPOINT python3 graphql_crawler.py
