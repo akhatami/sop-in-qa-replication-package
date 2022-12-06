@@ -1,6 +1,6 @@
-# "State-Of-The-Practice in Quality Assurance in Open Source Software Development" Replication Package
+# "State-Of-The-Practice in Quality Assurance in Java-Based Open Source Software Development" Replication Package
 
-This is a description of the replication package associated with *State-Of-The-Practice in Quality Assurance in Open Source Software Development* paper.
+This is a description of the replication package associated with *State-Of-The-Practice in Quality Assurance in Java-Based Open Source Software Development* paper.
 
 This replication package consists of three main sections:
 
@@ -19,12 +19,12 @@ Here is a quick guide if you only want to generate the results related to the re
     - **Testing**: [5. Testing analysis](#5-testing-analysis)
   - **RQ1.2 Which quality assurance approaches are being used in conjunction?** <br />
     [6. Combined results analysis](#6-combined-results-analysis)
-- **RQ2 What challenges and obstacles do practitioners or researchers face for each of the quality assurance practices?** <br />
-    According to challenges when doing [1. Data collection](#1-data-collection) and considering all the steps of [3. Data analysis](#3-data-analysis).
+  - **RQ1.3 How do mature projects follow quality assurance practices?** <br />
+    [7. Mature projects analysis](#7-mature-projects-analysis)
 
 
 # Table of the Contents
-- ["State-Of-The-Practice in Quality Assurance in Open Source Software Development" Replication Package](#state-of-the-practice-in-quality-assurance-in-open-source-software-development-replication-package)
+- ["State-Of-The-Practice in Quality Assurance in Java-Based Open Source Software Development" Replication Package](#state-of-the-practice-in-quality-assurance-in-java-based-open-source-software-development-replication-package)
 - [Table of the Contents](#table-of-the-contents)
 - [1. Data collection](#1-data-collection)
   - [Before starting the data collection](#before-starting-the-data-collection)
@@ -45,6 +45,7 @@ Here is a quick guide if you only want to generate the results related to the re
   - [4. Code review analysis](#4-code-review-analysis)
   - [5. Testing analysis](#5-testing-analysis)
   - [6. Combined results analysis](#6-combined-results-analysis)
+  - [7. Mature projects analysis](#7-mature-projects-analysis)
 # 1. Data collection
 This part explains the data collection steps of the study. Using this information you should be able to reproduce the dataset used in the study. We used a specific commit hash for each of the projects' repositories to collect the information related to a specific state of them, which makes it possible to reproduce results. However, due to unavoidable changes in the projects' repositories (e.g. making them private, or deleting all or some parts of them), you might not be able to collect the exact same data. If you need the exact dataset used in our study you can find them inside the `data` directory. More information about the dataset is presented in the next section (Dataset).
 
@@ -160,6 +161,8 @@ In the table below you see the description of each of the files of our dataset.
 | ``jacoco_results.csv``          | Code coverage availability results for projects and their modules                                         |
 | ``jacoco_coverage_results.csv`` | Code coverage results                                                                                     |
 | ``combined_results.csv``        | Aggregated results of all steps of the study, including all quality assurance practices                   |
+| ``mature_projects.csv``        | Aggregated results of quality assurance practices for all the mature projects.                   |
+| ``mature_projects_with_coverage.csv``        | The same mature projects file with complete coverage results gathered manually from projects' GitHub page.                   |
 
 For more details about each of the data files refer to the next section (Data analysis), where you can see how they are used inside Jupyter notebooks to derive the results of our study.
 # 3. Data analysis
@@ -252,3 +255,15 @@ and produces the followings:
 - ``figures/cc-cr-asat-ci.pdf``: Figure used in section 4.6 of the paper.
 
 Also, you can find the details of correlation analysis in the mentioned notebook.
+
+## 7. Mature projects analysis
+To produce the results related to the mature projects' analysis (RQ1.3) use ``jupyter-notebooks/mature_projects_analysis.ipynb`` notebook. 
+This notebook requires the following data files:
+ 
+- ``data/selected_projects.csv``
+- ``data/combined_results.csv``: Created and updated during the previous 5 steps. This data contains the main output of all other data analysis steps.
+
+and produces the followings:
+
+- ``data/mature_projects.csv``: Aggregated results of quality assurance practices for all the mature projects.
+- ``data/mature_projects_with_coverage.csv``: The same mature projects file with complete coverage results gathered manually from projects' GitHub page.
