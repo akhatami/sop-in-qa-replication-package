@@ -1,0 +1,51 @@
+repo_name,local_build,sat_usage,ci_build_combined,ci_state,ci_usage,cr_reviews,cr_comments,cr_changed_files,cr_changed_lines,testing_coverage,cr_rate,coverage_from_github,comment_on_coverage
+alibaba/nacos,1,1,,,0,24,3,464,19256,11.13,0.6506024096,43.58,https://github.com/alibaba/nacos/pull/8969
+alluxio/alluxio,1,1,,,0,65,87,62,6651,,1.416929785,,Have tests but no coverage information
+anuken/mindustry,,0,1,1,1,4,14,22,39769,,0.009957504589,,Have tests but no coverage information
+apache/cassandra,,1,,,0,,,,,,,,Have tests but no coverage information
+apache/dolphinscheduler,1,1,1,0,1,38,30,254,17173,,1.005764863,39.8,https://github.com/apache/dolphinscheduler/pull/11624
+apache/druid,1,1,0,0,1,97,65,168,20769,65.19,1.31041456,71.82,https://app.codecov.io/gh/apache/druid/commits
+apache/dubbo,1,1,1,1,1,18,23,52,6403,,0.3329689208,65.92,https://app.codecov.io/gh/apache/dubbo/commits
+apache/flink,1,1,,,0,73,72,97,2956,,4.75811908,,Have tests but no coverage information
+apache/hadoop,1,1,,,0,149,174,78,3697,,6.814714633,,Have tests but no coverage information
+apache/hbase,1,1,,,0,44,200,114,5779,,4.813289496,,Have tests but no coverage information
+apache/kafka,1,1,0,0,1,108,34,124,6318,,2.786957898,,Have tests but no coverage information
+apache/pulsar,1,1,,,0,144,69,165,100957,34.21,0.3481185059,,Have tests but no coverage information
+apache/shardingsphere,1,1,1,1,1,49,21,189,6140,84.38,2.154723127,60.6,https://app.codecov.io/gh/apache/shardingsphere/commits
+apache/skywalking,0,1,1,1,1,68,67,383,4142,,12.48309995,,Have tests but no coverage information
+apache/storm,0,1,0,0,1,112,8,260,4337,,7.193912843,,Have tests but no coverage information
+apereo/cas,0,1,,,0,13,60,69,27564,,0.1827383544,92.83,https://app.codecov.io/gh/apereo/cas/commits
+arduino/arduino,,0,1,1,1,23,41,188,17206,,0.699290945,,Have tests but no coverage information
+bazelbuild/bazel,,0,0,0,1,14,48,338,19641,,1.066951785,,Have tests but no coverage information
+checkstyle/checkstyle,1,1,0,0,1,8,22,234,9438,,0.7438016529,99.27,https://app.codecov.io/gh/checkstyle/checkstyle/commits
+dbeaver/dbeaver,1,0,1,1,1,22,3,90,2396,,0.9390651085,,Have tests but no coverage information
+dropwizard/dropwizard,1,0,1,0,1,45,24,152,9195,72.03,1.140619902,,Have tests but no coverage information
+eclipse/deeplearning4j,0,0,,,0,49,20,137,9044,,1.045223352,,Have tests but no coverage information
+elastic/elasticsearch,0,1,,,0,37,42,103,252289,,0.03225269433,,Have tests but no coverage information
+eugenp/tutorials,,1,,,0,4,0,266,38850,,0.02738738739,,Have tests but no coverage information
+google/exoplayer,,0,,,0,15,60,1611,3209295,,0.0376484555,,Have tests but no coverage information
+google/guava,1,0,,,0,1,0,48,1084,,0.0442804428,,Have tests but no coverage information
+grpc/grpc-java,,1,1,1,1,143,23,218,52128,,0.6942142419,84.08,https://app.codecov.io/gh/grpc/grpc-java/commits - also has another different coverage reported by coveralls
+jenkinsci/jenkins,1,1,1,1,1,63,42,41,2274,,1.893139842,59.74,https://github.com/jenkinsci/jenkins/runs/8003086792 - branch coverage
+k9mail/k-9,,0,,,0,1,10,117,1862,,0.6911922664,,Have tests but no coverage information
+keycloak/keycloak,0,0,1,0,1,63,33,410,3057,,12.87536801,,Have tests but no coverage information
+libgdx/libgdx,,0,1,1,1,53,54,80,214765,,0.03985751868,,Have tests but no coverage information
+minecraftforge/minecraftforge,0,0,,1,1,71,31,83,9576,,0.884085213,,Have tests but no coverage information
+neo4j/neo4j,1,1,,,0,,,,,,,,Have tests but no coverage information
+netty/netty,0,1,,,0,70,27,203,3437,,5.729124236,,Have tests but no coverage information
+openapitools/openapi-generator,,1,1,1,1,14,64,928,83435,,0.8675495895,,Have tests but no coverage information
+openjdk/jdk,,1,,,0,,,,,,,,Have tests but no coverage information
+oracle/graal,,1,0,0,1,163,37,176,7264,,4.845814978,,Have tests but no coverage information
+pentaho/pentaho-kettle,1,0,,,0,19,37,78,4813,,0.9075420736,,Have tests but no coverage information
+pinpoint-apm/pinpoint,0,1,1,0,1,1,13,732,10484,,0.9774895078,39.61,https://app.codecov.io/gh/pinpoint-apm/pinpoint/commits
+prestodb/presto,0,1,,,0,125,48,129,2913,,7.661174047,,Have tests but no coverage information
+reactivex/rxjava,1,1,1,1,1,7,28,79,4526,,0.610914715,99.74,https://codecov.io/gh/ReactiveX/RxJava/branch/3.x/commits
+realm/realm-java,,1,0,0,1,34,2,109,2943,,1.333333333,,Have tests but no coverage information
+seleniumhq/selenium,,1,1,0,1,20,33,64,229449,,0.01478324159,,Have tests but no coverage information
+signalapp/signal-android,,0,1,1,1,,,,,,,,Have tests but no coverage information
+spring-cloud/spring-cloud-netflix,1,1,1,0,1,18,35,121,2129,32.77,3.012212306,55.53,https://codecov.io/gh/spring-cloud/spring-cloud-netflix/branch/main/commits
+spring-projects/spring-boot,1,1,1,1,1,,,,,,,,Have tests but no coverage information
+spring-projects/spring-framework,0,1,0,0,1,0,24,23,108,,5.111111111,,Have tests but no coverage information
+spring-projects/spring-security,0,1,1,0,1,46,35,115,4545,,2.04950495,,Have tests but no coverage information
+swagger-api/swagger-core,,0,1,1,1,2,0,196,987,,0.3971631206,,Have tests but no coverage information
+teamnewpipe/newpipe,,1,1,1,1,45,91,57,1238,,6.261712439,,Have tests but no coverage information
