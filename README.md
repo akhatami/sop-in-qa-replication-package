@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7404903.svg)](https://doi.org/10.5281/zenodo.7404903)
+
 # "State-Of-The-Practice in Quality Assurance in Java-Based Open Source Software Development" Replication Package
 
 This is a description of the replication package associated with *State-Of-The-Practice in Quality Assurance in Java-Based Open Source Software Development* paper.
