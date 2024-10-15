@@ -263,6 +263,11 @@ This notebook requires the following data files:
 - ``data/selected_projects.csv``
 - ``data/combined_results.csv``: Created and updated during the previous 5 steps. This data contains the main output of all other data analysis steps.
 
+and produces the followings:
+
+- ``data/mature_projects.csv``: Aggregated results of quality assurance practices for all the mature projects.
+- ``data/mature_projects_with_coverage.csv``: The same mature projects file with complete coverage results gathered manually from projects' GitHub page.
+
 # How to Cite the Paper
 
 If you use this replication package in your research, please cite our paper using the following BibTeX entry:
@@ -289,8 +294,3 @@ If you use this replication package in your research, please cite our paper usin
 Alternatively, you can use the following citation format:
 
 Khatami, A., & Zaidman, A. (2024). State-of-the-practice in quality assurance in Java-based open source software development. Software: Practice and Experience, 54(8), 1408-1446. https://doi.org/10.1002/spe.3321
-
-and produces the followings:
-
-- ``data/mature_projects.csv``: Aggregated results of quality assurance practices for all the mature projects.
-- ``data/mature_projects_with_coverage.csv``: The same mature projects file with complete coverage results gathered manually from projects' GitHub page.
