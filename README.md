@@ -263,6 +263,33 @@ This notebook requires the following data files:
 - ``data/selected_projects.csv``
 - ``data/combined_results.csv``: Created and updated during the previous 5 steps. This data contains the main output of all other data analysis steps.
 
+# How to Cite the Paper
+
+If you use this replication package in your research, please cite our paper using the following BibTeX entry:
+
+```bibtex
+@article{DBLP:journals/spe/KhatamiZ24,
+  author       = {Ali Khatami and
+                  Andy Zaidman},
+  title        = {State-of-the-practice in quality assurance in Java-based open source
+                  software development},
+  journal      = {Softw. Pract. Exp.},
+  volume       = {54},
+  number       = {8},
+  pages        = {1408--1446},
+  year         = {2024},
+  url          = {https://doi.org/10.1002/spe.3321},
+  doi          = {10.1002/SPE.3321},
+  timestamp    = {Thu, 22 Aug 2024 20:24:27 +0200},
+  biburl       = {https://dblp.org/rec/journals/spe/KhatamiZ24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
+Alternatively, you can use the following citation format:
+
+Khatami, A., & Zaidman, A. (2024). State-of-the-practice in quality assurance in Java-based open source software development. Software: Practice and Experience, 54(8), 1408-1446. https://doi.org/10.1002/spe.3321
+
 and produces the followings:
 
 - ``data/mature_projects.csv``: Aggregated results of quality assurance practices for all the mature projects.
